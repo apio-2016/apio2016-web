@@ -1,0 +1,34 @@
+{% extends "sidebar_base.html" %}
+
+{% block title %} - News{% endblock %}
+
+{% block news_active %} class="active"{% endblock %}
+
+{% block navigation %}
+                <div class="primary-content-breadcrumb clearfix">
+                    <ol class="breadcrumb">
+                        <li><a href="{% url 'main' %}" class="glyphicon glyphicon-home" aria-hidden="true"></a></li>
+                        <li><a href="{% url 'main' %}" aria-hidden="true">News</a></li>
+                    </ol>
+                </div>
+{% endblock %}
+
+{% block content %}
+                                <div class="col-md-12">
+                                    <h2 class="page-header">News</h2>
+
+                                    {% for article in news %}
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading clearfix">
+                                            <span class="panel-title">{{ article.title }}</span>
+                                        </div>
+                                        <div class="panel-body">
+                                            {{ article.content|safe }}
+                                            <div>
+                                                <small>{{ article.datetime }}</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+{% endblock %}

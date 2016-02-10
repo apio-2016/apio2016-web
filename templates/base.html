@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>APIO 2016{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" media="screen" href='/static/css/main.css'>
+        <link rel="stylesheet" media="screen" href='/static/css/override.css'>
+        <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title pull-left">
+                                <h1>Asia-Pacific Informatics Olympiad 2016</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                {% block base_content %}
+                {% endblock %}
+            </div>
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="pull-left first">
+                                <div class="copyright">
+                                        &copy; 2016 <a href="{% url 'main' %}">APIO2016.ORG</a>
+                                </div>
+                            </div>
+                            <div class="pull-right">
+                                Contact: <a href="mailto:contact@apio2016.org">contact@apio2016.org</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,23 @@
+{% extends "sidebar_base.html" %}
+
+{% block title %} - Results{% endblock %}
+
+{% block results_active %} class="active"{% endblock %}
+
+{% block navigation %}
+                <div class="primary-content-breadcrumb clearfix">
+                    <ol class="breadcrumb">
+                        <li><a href="{% url 'main' %}" class="glyphicon glyphicon-home" aria-hidden="true"></a></li>
+                        <li><a href="{% url 'results' %}" aria-hidden="true">Results</a></li>
+                    </ol>
+                </div>
+{% endblock %}
+
+{% block content %}
+                                <div class="col-md-12">
+                                    <h2 class="page-header">Results</h2>
+                                    <div class="page-content">
+                                        <p>Not available yet.</p>
+                                    </div>
+                                </div>
+{% endblock %}

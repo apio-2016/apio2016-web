@@ -1,0 +1,30 @@
+{% extends "sidebar_base.html" %}
+
+{% block title %} - Regulations{% endblock %}
+
+{% block regulations_active %} class="active"{% endblock %}
+
+{% block navigation %}
+                <div class="primary-content-breadcrumb clearfix">
+                    <ol class="breadcrumb">
+                        <li><a href="{% url 'main' %}" class="glyphicon glyphicon-home" aria-hidden="true"></a></li>
+                        <li><a href="{% url 'regulations' %}" aria-hidden="true">Regulations</a></li>
+                    </ol>
+                </div>
+{% endblock %}
+
+{% block content %}
+                                <div class="col-md-12">
+                                    <h2 class="page-header">Regulations</h2>
+                                    <div class="page-content">
+                                        <p>The APIO 2016 contest is a one-day Internet contest, with teams competing from within their home countries. The contest will be held on ----, 2016, and will run for five hours from the starting time selected by each official contest site supervisor.</p>
+                                        <ul>
+                                            <li>Each delegation must run one or more official contest sites. All students must participate the contest at an official contest site.</li>
+                                            <li>Each contest site starts the contest at the time of its own choice within the competition day. Different sites from within the same delegation may also start the contest at different time (e.g., one time for an eastern site and another time for a western site).</li>
+                                            <li>Each contest site must be fully supervised in order to guarantee that the contest rules be observed by all the students.</li>
+                                            <li>Each delegation may consist of up to 100 students. However, only the top six students will form the official team, according to the contest results.</li>
+                                            <li>Students are eligible for this contest <strong>if and only if</strong> they are eligible for the IOI 2016.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+{% endblock %}

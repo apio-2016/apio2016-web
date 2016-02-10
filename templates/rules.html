@@ -1,0 +1,86 @@
+{% extends "sidebar_base.html" %}
+
+{% block title %} - Call for Tasks{% endblock %}
+
+{% block competition_active %} active{% endblock %}
+{% block rules_active %} class="active"{% endblock %}
+
+{% block navigation %}
+                <div class="primary-content-breadcrumb clearfix">
+                    <ol class="breadcrumb">
+                        <li><a href="{% url 'main' %}" class="glyphicon glyphicon-home" aria-hidden="true"></a></li>
+                        <li><a href="#" aria-hidden="true">Competition</a></li>
+                        <li><a href="{% url 'rules' %}" aria-hidden="true">Rules</a></li>
+                    </ol>
+                </div>
+{% endblock %}
+
+{% block content %}
+                                <div class="col-md-12">
+                                    <h2 class="page-header">Rules</h2>
+                                    <div class="page-content">
+                                        <p>These Competition Rules cover Problems, Competition Procedures and Grading Procedures in APIO 2016. Delegation Leaders have the responsibility of ensuring that all members of their delegation fully understand these rules and abide by them.</p>
+
+                                        <h3>Problems</h3>
+
+                                        <p>All problems in APIO 2016 are designed to be algorithmic in nature, and they are all of the traditional programming type.</p>
+                                        
+                                        <ul>
+                                        <li>In APIO 2016 competition, there are 3 problems to solve.</li>
+                                        <li>Solution comprises a single source file of a computer program which reads data from the standard input (stdin) and writes its answer to the standard output (stdout).</li>
+                                        <li>The problem statement will define: <br>
+                                        <ul><li>The problem description</li>
+                                        <li>Input and output data formats</li>
+                                        <li>The input value ranges / constraints</li>
+                                        <li>The resource limitations for the computations (e.g. CPU time, memory limitations)</li>
+                                        <li>Subtasks description: <br>
+                                        <ul><li>Point for completion of this subtask</li>
+                                        <li>The input value ranges / constraints for this subtask</li></ul></li>
+                                        <li>Any others constraints on the problem</li></ul></li>
+                                        </ul>
+
+                                        <h3>Input and Output Data</h3>
+
+                                        <ul>
+                                        <li>In all problems, input and output data consist of one or more lines.</li>
+                                        <li>Each line ends with an end-of-line character, including the last line.</li>
+                                        <li>The end-of-line character in Linux is represented by the single character '\n' (ASCII code 10).</li>
+                                        <li>Each line contains one or more space-separated items. <br>
+                                        <ul><li>An item is a string of printable non-white-space characters (ASCII code from 33 through 126, inclusive).</li>
+                                        <li>An item may represent an integer or a general string; the meaning of each item will be given in the problem description.</li></ul></li>
+                                        <li>The format and limits for input and output data will be specified in the problem description. The output data should be formatted strictly according to the problem-specific instructions.</li>
+                                        </ul>
+
+                                        <h3>Stack Limitations</h3>
+
+                                        <p>Whenever any submitted program is executed through the contest system, the stack size will only be limited by the memory limit for the corresponding problem.</p>
+
+                                        <h3>Competition Procedures</h3>
+
+                                        <ul>
+                                        <li>Contest runs for 5 hours.</li>
+                                        <li>For each site, contest starts when the leader for that site presses the start button on the <a href="https://competition.ia-toki.org/" title="TLX">TLX</a> site.</li>
+                                        <li>Competition system will be on <a href="https://competition.ia-toki.org/" title="TLX">TLX (https://competition.ia-toki.org)</a>.</li>
+                                        <li>Practice contest has been open, and can be accessed until 8 May 2015 on <a href="https://competition.ia-toki.org/" title="TLX">TLX</a>.</li>
+                                        <li>You can submit clarification requests in the first 2 hours. <br>
+                                        <ul><li>You can submit it in English or your native language.</li>
+                                        <li>If you submit in native language, your leader needs to translate it to English, then we can answer it only in English.</li></ul></li>
+                                        <li>Do not attempt to break or hack the system. We track every activity in the system. Any deliberate attempt will be considered as cheating.</li>
+                                        <li>Please do not share the problems after the contest within 2 days, because competition is not held within a same time range.</li>
+                                        </ul>
+
+                                        <h3>Grading</h3>
+
+                                        <ul>
+                                        <li>You can only submit at most 30 submissions for a problem.</li>
+                                        <li>You will get full feedback for each submission.</li>
+                                        <li>For each problem, there are several subtasks: <br>
+                                        <ul><li>For each subtask, there are points assigned to it.</li>
+                                        <li>Each subtask contains several test cases.</li>
+                                        <li>You get the points from that subtask if the program passes all the test cases in that subtask.</li></ul></li>
+                                        <li>The score of a submission is the sum of all the points that you get from completing subtasks.</li>
+                                        <li>The final score for a problem is the maximum of all the submission scores for that problem.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+{% endblock %}

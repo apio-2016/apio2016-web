@@ -1,0 +1,25 @@
+{% extends "sidebar_base.html" %}
+
+{% block title %} - About{% endblock %}
+
+{% block about_active %} class="active"{% endblock %}
+
+{% block navigation %}
+                <div class="primary-content-breadcrumb clearfix">
+                    <ol class="breadcrumb">
+                        <li><a href="{% url 'main' %}" class="glyphicon glyphicon-home" aria-hidden="true"></a></li>
+                        <li><a href="{% url 'about' %}" aria-hidden="true">About</a></li>
+                    </ol>
+                </div>
+{% endblock %}
+
+{% block content %}
+                                <div class="col-md-12">
+                                    <h2 class="page-header">About</h2>
+                                    <div class="page-content">
+                                        <p>The Asia-Pacific Informatics Olympiad (APIO) is an IOI-like competition for delegations within the South Asian / Western Pacific region. The contest will be held online, with students competing at contest sites within their own country or area.</p>
+
+                                        <p>APIO 2016 is organized by the Korean Committee for the IOI, and will be held on -----, 2016. The first competition was organized by the Australian IOI team in 2007.</p>
+                                    </div>
+                                </div>
+{% endblock %}

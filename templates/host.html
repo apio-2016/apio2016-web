@@ -1,0 +1,64 @@
+{% extends "sidebar_base.html" %}
+
+{% block title %} - Host{% endblock %}
+
+{% block host_active %} class="active"{% endblock %}
+
+{% block navigation %}
+                <div class="primary-content-breadcrumb clearfix">
+                    <ol class="breadcrumb">
+                        <li><a href="{% url 'main' %}" class="glyphicon glyphicon-home" aria-hidden="true"></a></li>
+                        <li><a href="{% url 'host' %}" aria-hidden="true">Host</a></li>
+                    </ol>
+                </div>
+{% endblock %}
+
+{% block content %}
+                                <div class="col-md-12">
+                                    <h2 class="page-header">Host committee</h2>
+                                    <div class="page-content">
+                                        <dl>
+                                            <dt>Charmain:</dt>
+                                            <dd>Prof. JaeHoon Kim, Busan University of Foreign Studies</dd>
+                                            <dd>&nbsp;</dd>
+                                            <dt>Organizing committee:</dt>
+                                            <dd><a class="link-black" href="http://myungwoo.kr" target="_blank">Myungwoo Chun</a>, Korea University</dd>
+                                            <dd>Woncheol Lee, Korea University</dd>
+                                            <dd>Jeongwoo Ji, Seoul National University</dd>
+                                            <dd>Taeyang Kim, Korea University</dd>
+                                            <dd>&nbsp;</dd>
+                                            <dt>Technical committee:</dt>
+                                            <dd><a class="link-black" href="http://myungwoo.kr" target="_blank">Myungwoo Chun</a>, Korea University</dd>
+                                            <dd>Hyungseok Yoon, Seoul National University</dd>
+                                            <dd>Hyunmin Choi, Seoul National University</dd>
+                                            <dd>Jeongwoo Ji, Seoul National University</dd>
+                                            <dd>&nbsp;</dd>
+                                            <dt>Scientific committee:</dt>
+                                            <dd>Gyeonggeun Kim, SungKyunKwan University</dd>
+                                            <dd>Geunwoo Bae, Korea University</dd>
+                                            <dd>Bumsoo Park, Seoul National University</dd>
+                                            <dd>Sangsoo Park, Seoul National University</dd>
+                                            <dd>Seokhwan Choi, Seoul National University</dd>
+                                            <dd>Hanpil Kang, KAIST</dd>
+                                            <dd>Jeehak Yoon, Seoul National University</dd>
+                                            <dd>Seunghyun Jo, Seoul National University</dd>
+                                            <dd>&nbsp;</dd>
+                                            <dt>Advisory committee:</dt>
+                                            <dd>Wonseok Yoo, Google</dd>
+                                            <dd>Jinho Kim, Ngine Studios</dd>
+                                            <dd>Dokyoung Lee, Ngine Studios</dd>
+                                            <dd>Chanmin Kim, Seoul National University</dd>
+                                            <dd>Soonil Kwon, KAIST</dd>
+                                            <dd>Jaehong Kim, KAIST</dd>
+                                            <dd>Jonghyuk Lee, Seoul National University</dd>
+                                            <dd>Donggu Kang, Massachusetts Institute of Technology</dd>
+                                            <dd>&nbsp;</dd>
+                                        </dl>
+                                    </div>
+                                    <h2 class="page-header">Sponsered by</h2>
+                                    <div class="page-content sponsers">
+                                        <a href="http://www.samsung.com" target="_blank"><img src="http://logosandbrands.directory/wp-content/themes/directorypress/thumbs/Samsung-Electronics-logo.gif" alt="Samsung Eelectronics"></a>
+                                        <a href="http://www.samsungsds.com/" target="_blank"><img src="https://cdn.samsungknox.com/knoxportal/files/samsung_sds.png" alt="Samsung SDS"></a>
+                                    </div>
+                                </div>
+{% endblock %}
