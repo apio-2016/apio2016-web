@@ -1,3 +1,19 @@
+table[data-type="ranking"] tr.gold {
+  background-color: #FFD600;
+}
+
+table[data-type="ranking"] tr.silver {
+  background-color: #C0C0C0;
+}
+
+table[data-type="ranking"] tr.bronze {
+  background-color: #CD7F32;
+}
+
+table[data-type="ranking"] .center {
+  text-align: center;
+}
+
 .avatar img {
 	max-width: 100%;
 }
